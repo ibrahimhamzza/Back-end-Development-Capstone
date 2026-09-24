@@ -1,12 +1,12 @@
 # 1. insert code to python:3.9.16-slim as base image
-FROM python:3.8.2
+FROM python:3.11-slim
 
 
 ENV PYTHONBUFFERED 1
 ENV PYTHONWRITEBYTECODE 1
 
 RUN apt-get update \
-    && apt-get install -y netcat
+    && apt-get install -y netcat-openbsd
 
 ENV APP=/app
 

@@ -20,7 +20,7 @@ spec:
         run: djangoserver
     spec:
       containers:
-      - image: us.icr.io/sn-labs-u7mxhi35yba/djangoserver:1
+      - image: us.icr.io/sn-labs-hemahamza200/djangoserver:1
         imagePullPolicy: Always
         name: djangoserver
         ports:
